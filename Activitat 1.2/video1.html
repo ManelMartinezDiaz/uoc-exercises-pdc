@@ -1,0 +1,23 @@
+<html> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+<script type="text/JavaScript" src="pac3.js"></script> 
+<title>Video</title> 
+</head> 
+<body> 
+<script type="text/javascript"> 
+if (checkAuth()){ 
+	if (checkLoc()){ document.writeln("<p align='right'><a href='Javascript:logout();'>logout</a></p>");
+	document.writeln('<video controls>'); 
+	document.writeln('<source src="bunny.mp4" type="video/mp4">'); 
+	document.writeln('<source src="bunny.webm" type="video/webm">'); 
+	document.writeln('Your browser does not support this video'); 
+	document.writeln('</video>'); }else{ document.writeln("<br>This video is unavailable from your country");
+	}
+
+}else{ 
+document.writeln('You are not allowed to access to this page.'); 
+}
+</script> 
+</body> 
+</html> 
